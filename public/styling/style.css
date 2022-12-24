@@ -1,0 +1,121 @@
+* {
+	box-sizing: border-box;
+}
+.page-ctn {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 0.995fr 0.05fr;
+}
+.page-title {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 3rem;
+	text-align: center;
+	/* border: 2px solid black; */
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 0.45rem;
+}
+main {
+	/* background-color: #f7bdc6; */
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+.instrument-ctn {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 75%;
+	/* border: 2px solid black; */
+	justify-content: space-around;
+}
+
+.scale-ctn {
+	width: 5em;
+	height: 5em;
+	border-radius: 0.35rem;
+	background-color: rgba(216, 112, 147, 0.547);
+	transition: all 0.09s ease-in-out 0.2ms;
+	border: 2px solid palevioletred;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* .scale-ctn-active { */
+.playing {
+	transform: scale(1.1);
+	border: 2px solid rgb(112, 169, 216);
+	background-color: rgba(112, 169, 216, 0.547);
+	box-shadow: 0 0 0.3rem #7dbbed;
+}
+/* .scale-ctn:hover {
+	transform: scale(1.1);
+	border: 2px solid rgb(112, 169, 216);
+	background-color: rgba(112, 169, 216, 0.547);
+	box-shadow: 0 0 0.3rem #7dbbed;
+} */
+.drum-item {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+.scale-caption {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	color: rgb(30, 30, 30);
+}
+.music-scale {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 2rem;
+	color: rgb(30, 30, 30);
+}
+/* em {
+	color: rgb(30, 30, 30);
+} */
+.foot-credits {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 0.75rem;
+	text-align: center;
+}
+footer {
+	background-color: antiquewhite;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	gap: 0.1rem;
+}
+.instuctions {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 0.75rem;
+}
+/* for fun! */
+/* add a screensaver animation in bg for fun */
+main {
+	background: linear-gradient(-45deg, #bfb6fb, #ffc7ef, #aad0fa, #f7f5bd);
+	background-size: 400% 400%;
+	animation: gradient 12s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
