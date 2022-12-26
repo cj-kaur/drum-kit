@@ -87,14 +87,7 @@ main {
 	font-size: 0.75rem;
 	text-align: center;
 }
-footer {
-	background-color: antiquewhite;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column nowrap;
-	gap: 0.1rem;
-}
+
 .instuctions {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
@@ -102,11 +95,10 @@ footer {
 }
 /* for fun! */
 /* add a screensaver animation in bg for fun */
-main {
+body {
 	background: linear-gradient(-45deg, #bfb6fb, #ffc7ef, #aad0fa, #f7f5bd);
 	background-size: 400% 400%;
 	animation: gradient 12s ease infinite;
-	height: 100vh;
 }
 @keyframes gradient {
 	0% {
@@ -118,4 +110,16 @@ main {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	gap: 0.1rem;
+	background: linear-gradient(
+		0deg,
+		rgba(245, 245, 245, 0.694) 0%,
+		rgba(245, 245, 245, 0) 100%
+	);
 }
